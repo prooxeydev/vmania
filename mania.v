@@ -9,7 +9,7 @@ import time
 const (
 	WinWidth = 1280
 	WinHeight = 720
-	PixelPerSecond = 250 
+	PixelPerSecond = 250
 )
 
 struct Mania {
@@ -37,10 +37,10 @@ mut:
 fn main() {
 	glfw.init_glfw()
 	mut keys := map[string]int
-	keys['ll'] = 0
-	keys['ml'] = 1
-	keys['mr'] = 2
-	keys['rr'] = 3
+	keys['ll'] = 68
+	keys['ml'] = 70
+	keys['mr'] = 72
+	keys['rr'] = 74
 	mut game := &Mania{
 		keys: keys
 		scroll_speed: PixelPerSecond
